@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/static/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -75,17 +75,36 @@
 	
 	  _createClass(App, [{
 	    key: 'render',
+	
+	
+	    // Props = {
+	    //   status: true
+	    // }
+	
 	    value: function render() {
+	      console.log(this.props);
+	
 	      return _react2.default.createElement(
-	        'h1',
+	        'div',
 	        null,
-	        ' React，我们来了... '
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          ' React，我们来了... '
+	        ),
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          this.props.status ? 'yes' : 'no'
+	        )
 	      );
 	    }
 	  }]);
 	
 	  return App;
 	}(_react.Component);
+	
+	App.defaultProps = { status: true };
 	
 	var rootEle = document.getElementById('app');
 	(0, _reactDom.render)(_react2.default.createElement(App, null), rootEle);

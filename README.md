@@ -22,3 +22,4 @@ $ cd react-fundamental && npm install
 - [x] [React第七讲课堂笔记（组件嵌套）](./docs/React第七讲课堂笔记（组件嵌套）.md)
 - [x] [React第八讲课堂笔记（表单操作）](./docs/React第八讲课堂笔记（表单操作）.md)
 - [x] [React第九讲课堂笔记（mixin）](./docs/React第九讲课堂笔记（mixin）.md)
+- [x] [React课堂笔记第十讲（编码规范）](./docs/React课堂笔记第十讲（编码规范）.md)
