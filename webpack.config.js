@@ -24,15 +24,15 @@ module.exports = {
       },
       {
         test: /\.css/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+        loader: 'style!css'
       },
     ]
   },
   devServer: {
-    hot: true,
     contentBase: "build",
     inline: true,
-    stats: { colors: true }
+    stats: { colors: true },
+    historyApiFallback: true
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),

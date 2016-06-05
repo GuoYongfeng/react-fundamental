@@ -1,32 +1,32 @@
-import React, { Component, PropTypes } from 'react';
-import { render } from 'react-dom';
+import React, { Component } from 'react';
+import ReactDOM, { render } from 'react-dom';
+import { Router, Route, browserHistory, Link } from 'react-router';
 
-const propTypes = {
-  status: PropTypes.string,
-}
+import './index.css';
 
-const defaultProps = {
-  status: 'default props'
-}
+const Home = () => <h1> <Links />Home {}</h1>
+const About = () => <h1> <Links /> About </h1>
+const Contact = () => <h1> <Links /> Contact </h1>
 
 class App extends Component {
-
-  state = {
-    a: 'hhh'
-  }
-
   render(){
     return (
-      <div>
-        <h1> React，我们来了...{this.state.a} </h1>
-        <h2>{this.props.status}</h2>
-      </div>
+      <Router history={browserHistory}>
+        <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/Contact" component={Contact} />
+      </Router>
     )
   }
 }
 
-App.defaultProps = defaultProps;
-App.propTypes = propTypes;
+const Links = () =>
+  <nav>
+    <Link activeClassName="active" to="/">Home </Link>
+    <Link activeClassName="active" to="/about">About </Link>
+    <Link activeClassName="active" to="/contact">Contact </Link>
+  </nav>
 
-const rootEle = document.getElementById('app')
+let rootEle = document.getElementById('app')
+
 render(<App />, rootEle)
