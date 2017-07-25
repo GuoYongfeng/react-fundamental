@@ -16,7 +16,7 @@ $ cd react-fundamental && npm install
 - [x] [React第一讲课堂笔记（初识React）](./docs/React第一讲课堂笔记（初识React）.md)
 - [x] [React第二讲课堂笔记（JSX语法）](./docs/React第二讲课堂笔记（JSX语法）.md)
 - [x] [React第三讲课堂笔记（数据流）](./docs/React第三讲课堂笔记（数据流）.md)
-- [x] [React第四讲课堂笔记（定义组件）](./docs/React第四讲课堂笔记（定义组件）.md)
+- [x] [React第四讲课堂笔记（定义组件的方法以及理解组件生命周期）](./docs/React第四讲课堂笔记（定义组件）.md)
 - [x] [React第五讲课堂笔记（DOM操作）](./docs/React第五讲课堂笔记（DOM操作）.md)
 - [x] [React第六讲课堂笔记（事件）](./docs/React第六讲课堂笔记（事件）.md)
 - [x] [React第七讲课堂笔记（组件嵌套）](./docs/React第七讲课堂笔记（组件嵌套）.md)
