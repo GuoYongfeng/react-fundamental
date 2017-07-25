@@ -1,6 +1,8 @@
-# React第四讲课堂笔记（定义组件）
+# React第四讲课堂笔记（定义组件的方法以及理解组件生命周期）
 
 用 `React.createClass` 或者 `React.Component` 定义组件时允许传入相应的配置及组件 `API` 的使用，包括组件生命周期提供的一系列钩子函数。
+
+![image](https://user-images.githubusercontent.com/8686869/28562061-70d51272-7153-11e7-9ca8-27f353e3eca1.png)
 
 ## 1. `组件初始定义`
 
